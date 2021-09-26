@@ -59,11 +59,11 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "first_name": {
+    "firstName": {
       "type": "string",
       "required": true
     },
-    "last_name": {
+    "lastName": {
       "type": "string",
       "required": true
     },
@@ -71,16 +71,12 @@
       "type": "float"
     },
     "address": {
-      "type": "text"
-    },
-    "electromart_role": {
-      "type": "enumeration",
-      "enum": [
-        "buyer",
-        "seller"
-      ],
-      "default": "buyer",
+      "type": "text",
       "required": true
+    },
+    "products": {
+      "via": "users_permissions_user",
+      "collection": "product"
     }
   }
 }

@@ -27,10 +27,10 @@
       "required": true,
       "min": 0
     },
-    "weight_in_grams": {
+    "weightInGrams": {
       "type": "integer",
       "required": true,
-      "min": 0
+      "min": 1
     },
     "condition": {
       "type": "enumeration",
@@ -57,7 +57,8 @@
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "products"
     }
   }
 }
