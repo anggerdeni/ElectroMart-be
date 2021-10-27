@@ -77,6 +77,10 @@
     "products": {
       "via": "users_permissions_user",
       "collection": "product"
+    },
+    "carts": {
+      "via": "users_permissions_user",
+      "collection": "cart"
     }
   }
 }
