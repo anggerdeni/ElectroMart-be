@@ -81,6 +81,14 @@
     "carts": {
       "via": "users_permissions_user",
       "collection": "cart"
+    },
+    "customer_addresses": {
+      "via": "users_permissions_user",
+      "collection": "customer-address"
+    },
+    "seller_addresses": {
+      "via": "users_permissions_user",
+      "collection": "seller-address"
     }
   }
 }

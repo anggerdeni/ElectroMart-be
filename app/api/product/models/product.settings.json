@@ -56,9 +56,9 @@
       "pluginOptions": {}
     },
     "users_permissions_user": {
+      "via": "products",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "products"
+      "model": "user"
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seller_addresses",
+  "info": {
+    "name": "SellerAddress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "seller_addresses"
+    },
+    "detail": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "primary": {
+      "type": "boolean"
+    }
+  }
+}

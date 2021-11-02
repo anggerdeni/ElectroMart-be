@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "carts",
+  "collectionName": "customer_addresses",
   "info": {
-    "name": "Cart"
+    "name": "CustomerAddress"
   },
   "options": {
     "increments": true,
@@ -11,18 +11,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "product": {
-      "model": "product"
-    },
     "users_permissions_user": {
-      "via": "carts",
+      "via": "customer_addresses",
       "plugin": "users-permissions",
       "model": "user"
     },
-    "quantity": {
-      "type": "integer",
-      "required": true,
-      "default": 1
+    "detail": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "primary": {
+      "type": "boolean"
     }
   }
 }
