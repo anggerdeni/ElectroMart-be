@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "couriers",
+  "info": {
+    "name": "courier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "integer"
+    },
+    "cost_per_km": {
+      "type": "float"
+    },
+    "cost_per_kg": {
+      "type": "float"
+    }
+  }
+}
