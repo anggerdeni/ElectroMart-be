@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/couriers",
+      "handler": "courier.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/couriers/count",
+      "handler": "courier.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/couriers/:id",
+      "handler": "courier.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/couriers",
+      "handler": "courier.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/courier/cost/:id",
+      "handler": "courier.cost",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/couriers/:id",
+      "handler": "courier.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/couriers/:id",
+      "handler": "courier.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
