@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_price": {
+      "type": "float"
+    },
+    "shipping_cost": {
+      "type": "float"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "seller": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "customer_address": {
+      "model": "customer-address"
+    },
+    "order_details": {
+      "via": "order",
+      "collection": "order-detail"
+    },
+    "payment": {
+      "model": "payment"
+    },
+    "order_status": {
+      "type": "enumeration",
+      "enum": [
+        "waiting",
+        "processed",
+        "done"
+      ],
+      "default": "waiting"
+    }
+  }
+}
