@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_methods",
+  "info": {
+    "name": "PaymentMethod",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "method": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
